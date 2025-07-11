@@ -6,50 +6,215 @@
     <title>YGN'Cake</title>
     <link
       rel="shortcut icon"
-      href="./photos/icons/logo.svg"
+      href="./photos/photos/icons/logo.svg"
       type="image/x-icon"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media-query.css" />
   </head>
+
   <body>
     <header>
       <nav>
+        <!-- logo -->
         <a href="/" class="logo">
-          <img src="./photos/icons/logo.svg" width="40" alt="" />
+          <img src="./photos/photos/c-1.svg" width="40" alt="" />
           <span>YGN'Cafe</span>
         </a>
-
+        <!-- nav items -->
         <ul class="nav-items">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Contact</a></li>
-
+          <li><a href="/">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li>
-            <a href="#" class="btn btn-primary"
-              ><img src="./photos/icons/facebook.svg" alt=""
+            <a href="#" class=""
+              ><img src="./photos/photos/icons/facebook.svg" alt=""
             /></a>
           </li>
           <li>
-            <a href="#" class="btn btn-primary"
-              ><img src="./photos/icons/instagram.svg" alt=""
+            <a href="#" class=""
+              ><img src="./photos/photos/icons/instagram.svg" alt=""
             /></a>
           </li>
           <li>
-            <a href="#" class="btn btn-primary"
-              ><img src="./photos/icons/twitter.svg" alt=""
+            <a href="#" class=""
+              ><img src="./photos/photos/icons/twitter.svg" alt=""
             /></a>
           </li>
         </ul>
+        <!-- menu btn -->
+        <img src="./photos/photos/icons/menu.svg" class="menu" alt="" />
       </nav>
       <div class="banner-content">
+        <div>
+          <img src="./photos/photos/cake-1.svg" width="20" alt="" />
+          <img src="./photos/photos/cake-2.svg" width="20" alt="" />
+          <img src="./photos/photos/cake-3.svg" width="20" alt="" />
+        </div>
         <h1>Welcome to YGN'Cafe</h1>
-        <p>Your favorite place for delicious cakes and coffee.</p>
-        <a href="#" class="btn btn-secondary">Order Now</a>
+        <p>
+          Your favorite place for delicious cakes and coffee. <br />
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />
+          Dolores commodi ut ullam earum alias vitae <br />
+          itaque dicta ipsum at atque!
+        </p>
+
+        <div class="btn-group">
+          <a href="#" class="btn btn-secondary">Order Now</a>
+          <a href="#" class="btn btn-secondary">Contact</a>
+        </div>
+        <div>
+          <img src="./photos/photos/c-1.svg" width="25" alt="" />
+          <span>&nbsp;</span>
+          <img src="./photos/photos/c-2.svg" width="25" alt="" />
+          <span>&nbsp;</span>
+          <img src="./photos/photos/c-3.svg" width="25" alt="" />
+          <span>&nbsp; &nbsp; &nbsp; &nbsp;</span>
+          <img src="./photos/photos/c-4.svg" width="25" alt="" />
+          <span>&nbsp;</span>
+          <img src="./photos/photos/c-5.svg" width="25" alt="" />
+        </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section id="about">
+        <h2 class="title">About Us</h2>
+        <div class="about-section">
+          <div class="about-content">
+            <h3>Our Story</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam,
+              beatae. Et molestias deleniti earum necessitatibus maiores
+              repudiandae corporis temporibus error. Distinctio aspernatur
+              possimus praesentium rerum nemo a obcaecati, quo eligendi quae!
+            </p>
+            <a href="#" class="btn btn-secondary">Read More</a>
+          </div>
+          <div class="about-image">
+            <img src="./photos/photos/icons/about-us.svg" width="350" alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="menu">
+        <h2 class="title">Menu</h2>
+        <div class="menu-section">
+          <div class="menu-content flex-2">
+            <h3>Classic</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Inventore, ducimus voluptatum. Id consectetur recusandae inventore
+              iusto, officiis nihi
+            </p>
+          </div>
+          <div class="menu-image flex-1">
+            <img src="./photos/photos/new-1.jpg" width="150" alt="" />
+          </div>
+          <div class="menu-image flex-1">
+            <img src="./photos/photos/new-2.jpg" width="150" alt="" />
+          </div>
+        </div>
+        <div class="menu-section">
+          <div class="menu-image flex-1">
+            <img src="./photos/photos/new-3.jpg" width="150" alt="" />
+          </div>
+          <div class="menu-content flex-2">
+            <h3>Classic</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Inventore, ducimus voluptatum. Id consectetur recusandae inventore
+              iusto, officiis nihi
+            </p>
+          </div>
+          <div class="menu-image flex-1">
+            <img src="./photos/photos/new-4.jpg" width="150" alt="" />
+          </div>
+        </div>
+        <div class="menu-section">
+          <div class="menu-image flex-1">
+            <img src="./photos/photos/new-5.jpg" width="150" alt="" />
+          </div>
+          <div class="menu-image flex-1">
+            <img src="./photos/photos/new-6.jpg" width="150" alt="" />
+          </div>
+          <div class="menu-content flex-2">
+            <h3>Classic</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Inventore, ducimus voluptatum. Id consectetur recusandae inventore
+              iusto, officiis nihi
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="testimonials" class="testimonials">
+        <h2 class="title">Testimonials</h2>
+        <div class="testimonials-section">
+          <div class="testimonials-content">
+            <blockquote>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus
+              explicabo aspernatur magnam voluptate! Ea architecto fugiat ullam
+              nam veritatis cumque tenetur molestias distinctio. Aspernatur,
+              excepturi quibusdam! Similique perferendis aliquid earum alias
+              accusantium consequatur eius impedit.
+            </blockquote>
+            <h3>John Doe</h3>
+            <p>CEO,Cafe Company</p>
+          </div>
+          <div class="testimonials-photo">
+            <img src="./photos/photos/new-5.jpg" width="150" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2 class="title">Contact Us</h2>
+        <div class="contact-container">
+          <div class="contact-section">
+            <div class="contact-content">
+              <h3>Address</h3>
+              <p>26 Main Street,Aydoun,USA</p>
+            </div>
+            <div class="contact-content">
+              <h3>Phone</h3>
+              <p>+1 234 345 784</p>
+            </div>
+            <div class="contact-content">
+              <h3>Email</h3>
+              <p>contact@yangoncafe.com</p>
+            </div>
+
+            <div class="contact-content">
+              <h3>Address</h3>
+              <p>26 Main Street,Aydown,USA</p>
+            </div>
+            <div class="contact-content">
+              <h3>Phone</h3>
+              <p>+1 234 345 784</p>
+            </div>
+            <div class="contact-content">
+              <h3>Email</h3>
+              <p>contact@yangoncafe.com</p>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <form action="">
+              <h3>Contact Us</h3>
+
+              <input type="text" placeholder="Name***" />
+
+              <input type="email" placeholder="Email***" />
+              <input type="text" placeholder="Subject***" />
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
+
     <script src="js/script.js"></script>
   </body>
 </html>
