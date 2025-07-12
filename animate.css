@@ -1,0 +1,80 @@
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: red;
+    /* animation: move 2s    infinite linear; */
+    animation: move 5s 2s infinite forwards linear;
+    /* animation: move 2s 2s infinite backwards linear;  */
+    position: absolute;
+}
+
+@keyframes move {
+
+    /* 0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(100px);
+        } */
+    /* 0%{
+            transform: translateX(100px);
+        }
+        100%{
+            transform: translateX(0px);
+        } */
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    20% {
+        top: 0;
+        left: 500px;
+        background: green;
+    }
+
+    40% {
+        top: 400px;
+        left: 500px;
+        background: blue;
+        border-radius: 50%;
+        transform: scale(2);
+    }
+
+    60% {
+        top: 400px;
+        left: 0;
+        background: yellow;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+.app {
+    width: 300px;
+    padding: 20px;
+    background: pink;
+    /* transform: translateX(100px); */
+    transform: translate(200px, 200px);
+    /* transform: translateY(200px); */
+
+    opacity: 0;
+    animation: test 3s 2 forwards ease-in-out;
+}
+
+@keyframes test {
+
+    /* 0%{
+            transform: translateX(100px);
+            opacity: 0;
+        }
+         */
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
