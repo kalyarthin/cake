@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YGN'Cake</title>
     <link
+      href="https://cdn.jsdelivr.net/npm/@hellouxpavel/cssanimation@latest/dist/cssanimation.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@hellouxpavel/cssanimation@latest/dist/cssanimation-utility.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link
       rel="shortcut icon"
       href="./photos/photos/icons/logo.svg"
       type="image/x-icon"
@@ -52,7 +62,9 @@
           <img src="./photos/photos/cake-2.svg" width="20" alt="" />
           <img src="./photos/photos/cake-3.svg" width="20" alt="" />
         </div>
-        <h1>Welcome to YGN'Cafe</h1>
+        <h1 class="cssanimation ca__fx-blurInfromLeft ca__u-loopForever">
+          Welcome to YGN'Cafe
+        </h1>
         <p>
           Your favorite place for delicious cakes and coffee. <br />
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />
@@ -78,8 +90,8 @@
       </div>
     </header>
     <main>
-      <section id="about">
-        <h2 class="title">About Us</h2>
+      <section id="about" data-aos="zoom-out-right" data-aos-duration="3000">
+        <h2 class="title cssanimation ca__fx-blurInfromLeft">About Us</h2>
         <div class="about-section">
           <div class="about-content">
             <h3>Our Story</h3>
@@ -107,15 +119,30 @@
               iusto, officiis nihi
             </p>
           </div>
-          <div class="menu-image flex-1">
+          <div
+            class="menu-image flex-1"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="3000"
+          >
             <img src="./photos/photos/new-1.jpg" width="150" alt="" />
           </div>
-          <div class="menu-image flex-1">
+          <div
+            class="menu-image flex-1"
+            data-aos="fade-down"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="3000"
+          >
             <img src="./photos/photos/new-2.jpg" width="150" alt="" />
           </div>
         </div>
         <div class="menu-section">
-          <div class="menu-image flex-1">
+          <div
+            class="menu-image flex-1"
+            data-aos="fade-left"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="3000"
+          >
             <img src="./photos/photos/new-3.jpg" width="150" alt="" />
           </div>
           <div class="menu-content flex-2">
@@ -126,15 +153,29 @@
               iusto, officiis nihi
             </p>
           </div>
-          <div class="menu-image flex-1">
+          <div
+            class="menu-image flex-1"
+            data-aos="fade-right"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="3000"
+          >
             <img src="./photos/photos/new-4.jpg" width="150" alt="" />
           </div>
         </div>
-        <div class="menu-section">
-          <div class="menu-image flex-1">
+        <div class="menu-section flex-1">
+          <div
+            data-aos="fade-left"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="3000"
+          >
             <img src="./photos/photos/new-5.jpg" width="150" alt="" />
           </div>
-          <div class="menu-image flex-1">
+          <div
+            class="menu-image flex-1"
+            data-aos="fade-down"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="3000"
+          >
             <img src="./photos/photos/new-6.jpg" width="150" alt="" />
           </div>
           <div class="menu-content flex-2">
@@ -272,5 +313,9 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
